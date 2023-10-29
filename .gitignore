@@ -3,3 +3,7 @@
 /.idea
 node_modules
 data
+.env*
+.flaskenv*
+!.env.project
+!.env.vault

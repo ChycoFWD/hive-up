@@ -2,8 +2,8 @@ FROM node:18.16.0-alpine
 
 WORKDIR /app/medusa
 
-COPY medusa-starter-default/package.json .
-COPY medusa-starter-default/yarn.lock .
+COPY hive-backend/package.json .
+# COPY hive-backend/yarn.lock .
 COPY develop.sh .
 COPY deploy.sh .
 
@@ -24,7 +24,7 @@ RUN yarn add medusa-plugin-sendgrid
 RUN yarn add medusa-plugin-meilisearch
 
 # Add the remaining files
-COPY medusa-starter-default/ ./
+COPY hive-backend/ ./
 
 # Add the custom config, including additional plugins
 COPY medusa-config.js .

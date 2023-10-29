@@ -9,7 +9,7 @@ services:
     #   dockerfile: Dockerfile
     # image: medusa-starter-default:1.0.0
     hostname: "`${MEDUSA_DOMAIN}`"
-    container_name: medusa-server-default
+    container_name: hive-backend
     depends_on:
       postgres:
         condition: service_healthy
