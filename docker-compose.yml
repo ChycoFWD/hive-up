@@ -24,6 +24,11 @@ services:
       REDIS_URL: redis://redis
       NODE_ENV: development
       PORT: 9000
+      MEDUSA_FF_PRODUCT_CATEGORIES: true
+      MEDUSA_FF_TAX_INCLUSIVE_PRICING: true
+      MEDUSA_FF_ORDER_EDITING: true
+      MEDUSA_FF_SALES_CHANNELS: true
+      MEDUSA_FF_PUBLISHABLE_API_KEYS: true
     env_file:
       - .env
     ports:
